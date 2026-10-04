@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent wiki · New library"
+  short_description: "Create a library around your actual work"
+  default_prompt: "Use $llm-wiki-onboard. Set up a library for these materials."
+policy:
+  allow_implicit_invocation: true

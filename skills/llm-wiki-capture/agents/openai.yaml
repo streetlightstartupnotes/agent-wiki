@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent wiki · Save decisions"
+  short_description: "Keep decisions and open questions from a chat"
+  default_prompt: "Use $llm-wiki-capture. Save the confirmed decisions from this conversation."
+policy:
+  allow_implicit_invocation: true

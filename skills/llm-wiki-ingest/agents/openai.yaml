@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent wiki · Add sources"
+  short_description: "Turn source material into connected notes"
+  default_prompt: "Use $llm-wiki-ingest. Organize these sources in the selected library."
+policy:
+  allow_implicit_invocation: true

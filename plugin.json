@@ -1,0 +1,100 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "llm-wiki",
+  "version": "0.2.2",
+  "description": "Agent wiki: your notes, sources and past decisions, together in Codex.",
+  "author": {
+    "name": "路灯同学创业笔记",
+    "url": "https://github.com/streetlightstartupnotes"
+  },
+  "license": "GPL-3.0",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Agent wiki",
+        "shortDescription": "Notes and decisions in Codex",
+        "longDescription": "Write and link Markdown notes, retain sources, research questions and save confirmed decisions in Codex. Agent wiki runs a local MCP service and a native notes workspace. It includes Chinese and English interfaces and optional, explicitly scoped conversation-history tools. Requires a local Codex host, Python 3.9+, Ruby and WEBrick. Selected content is processed by Codex under your account settings; this is not offline AI. No hosted knowledge service or telemetry.",
+        "developerName": "路灯同学创业笔记",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "Open Agent wiki.",
+          "Find what my knowledge library says about this topic.",
+          "Save the decisions from this conversation to my selected knowledge library."
+        ],
+        "composerIcon": "./assets/logo-square.png",
+        "logo": "./assets/logo-square.png",
+        "websiteURL": "https://github.com/streetlightstartupnotes/agent-wiki"
+      },
+      "onboardingSkill": "./skills/llm-wiki/SKILL.md",
+      "publication": {
+        "release_notes": "Local Codex knowledge workspace with bilingual guidance, scoped session workflows and revision-safe writing. Distribution cleaned of development data and private configuration.",
+        "translations": {
+          "zh-CN": {
+            "subtitle": "在 Codex 中整理笔记与决定",
+            "description": "在 Codex 中写 Markdown 笔记、保留资料出处、研究问题和记录决定。包含中英文界面、关系图谱及按授权范围使用的会话整理工具。需要本地 Codex 宿主、Python 3.9+、Ruby 和 WEBrick。文件保存在用户选择的本机目录；读取的内容由用户的 Codex 账号处理，不是离线 AI，也不提供远程托管知识服务。"
+          }
+        }
+      },
+      "review": {
+        "commerce": false,
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Open a new local library in a reviewer-chosen private folder.",
+              "prompt": "Open Agent wiki and create a library named Reading notes in the private folder I select.",
+              "tools_triggered": "wiki_open, wiki_write, wiki_read",
+              "expected_behavior": "Ask only for missing storage choice. Create an empty named library, without invented goals or automatic global selection."
+            },
+            {
+              "description": "Save a supplied decision in the explicitly selected library.",
+              "prompt": "Save this decision in this library: keep source documents beside the notes so citations can be checked.",
+              "tools_triggered": "wiki_read, wiki_search, wiki_write",
+              "expected_behavior": "Read purpose, schema and existing relevant notes. Create or merge a dated sourced note, reread it, and report the actual changed path."
+            },
+            {
+              "description": "Retain supplied text before organizing it.",
+              "prompt": "Add this text to the selected library: source material should remain available alongside each summary.",
+              "tools_triggered": "wiki_read, wiki_write",
+              "expected_behavior": "Store the supplied text as a retained source, create or merge notes with source references, and verify persistence before marking ingestion complete."
+            },
+            {
+              "description": "Answer from full notes in the selected library.",
+              "prompt": "What do my notes in this library say about retaining source material?",
+              "tools_triggered": "wiki_search, wiki_read",
+              "expected_behavior": "Search only the selected library, read full matches and sources, then answer with citations. Do not edit notes or scan private sessions."
+            },
+            {
+              "description": "Connect relevant existing notes with verified links.",
+              "prompt": "Connect the notes about retaining source documents in this library and check for broken links.",
+              "tools_triggered": "wiki_read, wiki_write",
+              "expected_behavior": "Read existing pages and current revisions, add supported canonical links, reread changes, inspect graph and lint, and preserve unrelated content."
+            }
+          ],
+          "negative": [
+            {
+              "description": "An unrelated coding task needs no personal history.",
+              "prompt": "Write a Python function that sorts a list of numbers.",
+              "expected_behavior": "Answer the coding request without opening, searching or writing a wiki or scanning historical conversations."
+            },
+            {
+              "description": "Do not guess a destination when none is selected or authorized.",
+              "prompt": "Save this decision to my wiki.",
+              "expected_behavior": "If no usable destination exists, ask for the missing library choice before writing. Do not infer it from the working directory or pick an arbitrary library."
+            },
+            {
+              "description": "Never overwrite newer content using a stale revision.",
+              "prompt": "Update this note using the old revision even if someone else has changed it.",
+              "tools_triggered": "wiki_read",
+              "expected_behavior": "Do not force the stale update. Read the latest note, reconcile changes within the authorized task and preserve new content; the write endpoint rejects a stale revision with 409."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "homepage": "https://github.com/streetlightstartupnotes/agent-wiki"
+}

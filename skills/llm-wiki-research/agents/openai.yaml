@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent wiki · Research"
+  short_description: "Save a researched answer with its sources"
+  default_prompt: "Use $llm-wiki-research. Research this question and save the findings."
+policy:
+  allow_implicit_invocation: true

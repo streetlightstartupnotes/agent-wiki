@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent wiki · Connect notes"
+  short_description: "Connect related notes without losing context"
+  default_prompt: "Use $llm-wiki-relink. Connect the related notes in this library."
+policy:
+  allow_implicit_invocation: true

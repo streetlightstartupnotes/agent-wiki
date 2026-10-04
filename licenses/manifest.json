@@ -1,0 +1,499 @@
+{
+  "verified_on": "2026-10-04",
+  "scope": "Actual npm package code emitted by the browser esbuild build, plus separately recorded embedded subcomponents. Build tooling and unused npm packages are not browser runtime components.",
+  "verification": "In-memory esbuild build with write:false and metafile:true; include output input entries with bytesInOutput > 0; compare installed package versions with package-lock.json; copy license files byte-for-byte.",
+  "packages": [
+    {
+      "name": "@modelcontextprotocol/client",
+      "version": "2.2.0",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/modelcontextprotocol/typescript-sdk.git"
+      },
+      "lockfile_integrity": "sha512-LxCou/CSYQ6dwEnjhLZY0KnEuc8V4UJ3IEQCl/uR2yHobSQIEdJKUlKLRYRF5i5FqRGHy1eK7une3aAWDHLtig==",
+      "source_directory": "node_modules/@modelcontextprotocol/client",
+      "bundled_input_count": 5,
+      "bundled_bytes": 99412,
+      "license_files": [
+        {
+          "path": "modelcontextprotocol--client-2.2.0/LICENSE",
+          "source_path": "node_modules/@modelcontextprotocol/client/LICENSE",
+          "sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a"
+        }
+      ],
+      "license_note": "Package metadata declares MIT. The preserved LICENSE contains the upstream MIT-to-Apache-2.0 transition notice, Apache-2.0 and MIT texts, plus a CC-BY-4.0 documentation notice; retain the complete file."
+    },
+    {
+      "name": "@modelcontextprotocol/core",
+      "version": "2.2.0",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/modelcontextprotocol/typescript-sdk.git"
+      },
+      "lockfile_integrity": "sha512-iLhmprRmWI8EcosOA3wVvww22z02NkgqhV4fBH6f/odQBsi7xnJc0HGmi21yWO+/iKw2yzqVE127Zhna5/+JXw==",
+      "source_directory": "node_modules/@modelcontextprotocol/core",
+      "bundled_input_count": 1,
+      "bundled_bytes": 16730,
+      "license_files": [
+        {
+          "path": "modelcontextprotocol--core-2.2.0/LICENSE",
+          "source_path": "node_modules/@modelcontextprotocol/core/LICENSE",
+          "sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a"
+        }
+      ],
+      "license_note": "Package metadata declares MIT. The preserved LICENSE contains the upstream MIT-to-Apache-2.0 transition notice, Apache-2.0 and MIT texts, plus a CC-BY-4.0 documentation notice; retain the complete file."
+    },
+    {
+      "name": "@modelcontextprotocol/ext-apps",
+      "version": "2.0.3",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/modelcontextprotocol/ext-apps.git"
+      },
+      "lockfile_integrity": "sha512-Tn+4+cyhO4f4cQSDxNyLiIfEE+qlTTuIbWBJB8JTinEXOhDYgCT4wDTQplxD9MBYZH5pCYGC59GaxiwIT4bu8w==",
+      "source_directory": "node_modules/@modelcontextprotocol/ext-apps",
+      "bundled_input_count": 1,
+      "bundled_bytes": 30408,
+      "license_files": [
+        {
+          "path": "modelcontextprotocol--ext-apps-2.0.3/LICENSE",
+          "source_path": "node_modules/@modelcontextprotocol/ext-apps/LICENSE",
+          "sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a"
+        }
+      ],
+      "license_note": "Package metadata declares MIT. The preserved LICENSE contains the upstream MIT-to-Apache-2.0 transition notice, Apache-2.0 and MIT texts, plus a CC-BY-4.0 documentation notice; retain the complete file."
+    },
+    {
+      "name": "d3-dispatch",
+      "version": "3.0.1",
+      "declared_license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-dispatch.git"
+      },
+      "lockfile_integrity": "sha512-rzUyPU/S7rwUflMyLc1ETDeBj0NRuHKKAcvukozwhshr6g6c5d8zh4c2gQjY2bZ0dXeGLWc1PF174P2tVvKhfg==",
+      "source_directory": "node_modules/d3-dispatch",
+      "bundled_input_count": 1,
+      "bundled_bytes": 1550,
+      "license_files": [
+        {
+          "path": "d3-dispatch-3.0.1/LICENSE",
+          "source_path": "node_modules/d3-dispatch/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ]
+    },
+    {
+      "name": "d3-force",
+      "version": "3.0.0",
+      "declared_license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-force.git"
+      },
+      "lockfile_integrity": "sha512-zxV/SsA+U4yte8051P4ECydjD/S+qeYtnaIyAs9tgHCqfguma/aAQDjo85A9Z6EKhBirHRJHXIgJUlffT4wdLg==",
+      "source_directory": "node_modules/d3-force",
+      "bundled_input_count": 10,
+      "bundled_bytes": 7070,
+      "license_files": [
+        {
+          "path": "d3-force-3.0.0/LICENSE",
+          "source_path": "node_modules/d3-force/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ]
+    },
+    {
+      "name": "d3-quadtree",
+      "version": "3.0.1",
+      "declared_license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-quadtree.git"
+      },
+      "lockfile_integrity": "sha512-04xDrxQTDTCFwP5H6hRhsRcb9xxv2RzkcsygFzmkSIOJy3PeRJP7sNk3VRIbKXcog561P9oU0/rVH6vDROAgUw==",
+      "source_directory": "node_modules/d3-quadtree",
+      "bundled_input_count": 14,
+      "bundled_bytes": 5004,
+      "license_files": [
+        {
+          "path": "d3-quadtree-3.0.1/LICENSE",
+          "source_path": "node_modules/d3-quadtree/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ]
+    },
+    {
+      "name": "d3-timer",
+      "version": "3.0.1",
+      "declared_license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/d3/d3-timer.git"
+      },
+      "lockfile_integrity": "sha512-ndfJ/JxxMd3nw31uyKoY2naivF+r29V+Lc0svZxe1JvvIRmi8hUsrMvdOwgS1o6uBHmiz91geQ0ylPP0aj1VUA==",
+      "source_directory": "node_modules/d3-timer",
+      "bundled_input_count": 1,
+      "bundled_bytes": 1315,
+      "license_files": [
+        {
+          "path": "d3-timer-3.0.1/LICENSE",
+          "source_path": "node_modules/d3-timer/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ]
+    },
+    {
+      "name": "dompurify",
+      "version": "3.4.16",
+      "declared_license": "(MPL-2.0 OR Apache-2.0)",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/cure53/DOMPurify.git"
+      },
+      "lockfile_integrity": "sha512-sqo+pNp3qRhCIpbgRi1y8Tgk27Bo2Ry7w0dC1NBeNTdZChWjz9Xb/KOoZbRP/R6pQZ80Qw8YhXw13hWWBbMRnQ==",
+      "source_directory": "node_modules/dompurify",
+      "bundled_input_count": 1,
+      "bundled_bytes": 30321,
+      "license_files": [
+        {
+          "path": "dompurify-3.4.16/LICENSE",
+          "source_path": "node_modules/dompurify/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "dompurify-3.4.16/LICENSE-MPL",
+          "source_path": "node_modules/dompurify/LICENSE-MPL",
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+        }
+      ],
+      "license_note": "Upstream offers MPL-2.0 OR Apache-2.0. This distribution uses the Apache-2.0 option; both upstream license files are preserved. The embedded Babel regenerator helper has its own MIT notice."
+    },
+    {
+      "name": "events",
+      "version": "3.3.0",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/Gozala/events.git",
+        "web": "https://github.com/Gozala/events"
+      },
+      "lockfile_integrity": "sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==",
+      "source_directory": "node_modules/events",
+      "bundled_input_count": 1,
+      "bundled_bytes": 6160,
+      "license_files": [
+        {
+          "path": "events-3.3.0/LICENSE",
+          "source_path": "node_modules/events/LICENSE",
+          "sha256": "631987b7616a325a5b97566c232418481ddf7dbb5ecadefb991e791876cc2599"
+        }
+      ]
+    },
+    {
+      "name": "graphology",
+      "version": "0.26.0",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/graphology/graphology.git"
+      },
+      "lockfile_integrity": "sha512-8SSImzgUUYC89Z042s+0r/vMibY7GX/Emz4LDO5e7jYXhuoWfHISPFJYjpRLUSJGq6UQ6xlenvX1p/hJdfXuXg==",
+      "source_directory": "node_modules/graphology",
+      "bundled_input_count": 1,
+      "bundled_bytes": 61249,
+      "license_files": [
+        {
+          "path": "graphology-0.26.0/LICENSE.txt",
+          "source_path": "node_modules/graphology/LICENSE.txt",
+          "sha256": "9d396b4882c329077f32861c0d6822dcee48f2d0ff6196d8459af70844196275"
+        }
+      ]
+    },
+    {
+      "name": "graphology-utils",
+      "version": "2.5.2",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/graphology/graphology.git"
+      },
+      "lockfile_integrity": "sha512-ckHg8MXrXJkOARk56ZaSCM1g1Wihe2d6iTmz1enGOz4W/l831MBCKSayeFQfowgF8wd+PQ4rlch/56Vs/VZLDQ==",
+      "source_directory": "node_modules/graphology-utils",
+      "bundled_input_count": 1,
+      "bundled_bytes": 188,
+      "license_files": [
+        {
+          "path": "graphology-utils-2.5.2/LICENSE.txt",
+          "source_path": "node_modules/graphology-utils/LICENSE.txt",
+          "sha256": "597c30078622c20d8e62f9d96b4d2b9f9013b9668b778a55eb00810d093cd08c"
+        }
+      ]
+    },
+    {
+      "name": "lucide-react",
+      "version": "0.468.0",
+      "declared_license": "ISC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/lucide-icons/lucide.git",
+        "directory": "packages/lucide-react"
+      },
+      "lockfile_integrity": "sha512-6koYRhnM2N0GGZIdXzSeiNwguv1gt/FAjZOiPl76roBi3xKEXa4WmfpxgQwTTL4KipXjefrnf3oV4IsYhi4JFA==",
+      "source_directory": "node_modules/lucide-react",
+      "bundled_input_count": 0,
+      "bundled_bytes": 0,
+      "license_files": [
+        {
+          "path": "lucide-react-0.468.0/LICENSE",
+          "source_path": "node_modules/lucide-react/LICENSE",
+          "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+        }
+      ],
+      "license_note": "The complete ISC license retains the attribution to Feather portions by Cole Bemis under MIT."
+    },
+    {
+      "name": "marked",
+      "version": "15.0.12",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/markedjs/marked.git"
+      },
+      "lockfile_integrity": "sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==",
+      "source_directory": "node_modules/marked",
+      "bundled_input_count": 1,
+      "bundled_bytes": 38725,
+      "license_files": [
+        {
+          "path": "marked-15.0.12/LICENSE.md",
+          "source_path": "node_modules/marked/LICENSE.md",
+          "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+        }
+      ],
+      "license_note": "The complete LICENSE.md also contains the original Markdown redistribution notice attributed to John Gruber."
+    },
+    {
+      "name": "pkce-challenge",
+      "version": "5.0.1",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/crouchcd/pkce-challenge.git"
+      },
+      "lockfile_integrity": "sha512-wQ0b/W4Fr01qtpHlqSqspcj3EhBvimsdh0KlHhH8HRZnMsEa0ea2fTULOXOS9ccQr3om+GcGRk4e+isrZWV8qQ==",
+      "source_directory": "node_modules/pkce-challenge",
+      "bundled_input_count": 1,
+      "bundled_bytes": 28,
+      "license_files": [
+        {
+          "path": "pkce-challenge-5.0.1/LICENSE",
+          "source_path": "node_modules/pkce-challenge/LICENSE",
+          "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d"
+        }
+      ]
+    },
+    {
+      "name": "react",
+      "version": "19.2.7",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/facebook/react.git",
+        "directory": "packages/react"
+      },
+      "lockfile_integrity": "sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==",
+      "source_directory": "node_modules/react",
+      "bundled_input_count": 2,
+      "bundled_bytes": 7710,
+      "license_files": [
+        {
+          "path": "react-19.2.7/LICENSE",
+          "source_path": "node_modules/react/LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ]
+    },
+    {
+      "name": "react-dom",
+      "version": "19.2.7",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/facebook/react.git",
+        "directory": "packages/react-dom"
+      },
+      "lockfile_integrity": "sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==",
+      "source_directory": "node_modules/react-dom",
+      "bundled_input_count": 4,
+      "bundled_bytes": 181014,
+      "license_files": [
+        {
+          "path": "react-dom-19.2.7/LICENSE",
+          "source_path": "node_modules/react-dom/LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ]
+    },
+    {
+      "name": "scheduler",
+      "version": "0.27.0",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/facebook/react.git",
+        "directory": "packages/scheduler"
+      },
+      "lockfile_integrity": "sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==",
+      "source_directory": "node_modules/scheduler",
+      "bundled_input_count": 2,
+      "bundled_bytes": 3714,
+      "license_files": [
+        {
+          "path": "scheduler-0.27.0/LICENSE",
+          "source_path": "node_modules/scheduler/LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ]
+    },
+    {
+      "name": "sigma",
+      "version": "3.0.3",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "http://github.com/jacomyal/sigma.js.git"
+      },
+      "lockfile_integrity": "sha512-5H0zFlx6/NTQpqBg4Rm569ZOpnBOXMaS25UQThIWMU3XyzI5AhmorK/gnl87BvJBLhQd0tW4C0LIp3enWzMoNw==",
+      "source_directory": "node_modules/sigma",
+      "bundled_input_count": 8,
+      "bundled_bytes": 91502,
+      "license_files": [
+        {
+          "path": "sigma-3.0.3/LICENSE.txt",
+          "source_path": "node_modules/sigma/LICENSE.txt",
+          "sha256": "2d6beb4435a5186414986ef25facdea68619d0f3e1043b9a795f5c6233914013"
+        }
+      ]
+    },
+    {
+      "name": "turndown",
+      "version": "7.2.4",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mixmark-io/turndown.git"
+      },
+      "lockfile_integrity": "sha512-I8yFsfRzmzK0WV1pNNOA4A7y4RDfFxPRxb3t+e3ui14qSGOxGtiSP6GjeX+Y6CHb7HYaFj7ECUD7VE5kQMZWGQ==",
+      "source_directory": "node_modules/turndown",
+      "bundled_input_count": 1,
+      "bundled_bytes": 11002,
+      "license_files": [
+        {
+          "path": "turndown-7.2.4/LICENSE",
+          "source_path": "node_modules/turndown/LICENSE",
+          "sha256": "a055e3a15db4b4cbb5af381230eba085603126d7d5d8c4dae45ee85b877a9729"
+        }
+      ]
+    },
+    {
+      "name": "turndown-plugin-gfm",
+      "version": "1.0.2",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/domchristie/turndown-plugin-gfm.git"
+      },
+      "lockfile_integrity": "sha512-vwz9tfvF7XN/jE0dGoBei3FXWuvll78ohzCZQuOb+ZjWrs3a0XhQVomJEb2Qh4VHTPNRO4GPZh0V7VRbiWwkRg==",
+      "source_directory": "node_modules/turndown-plugin-gfm",
+      "bundled_input_count": 1,
+      "bundled_bytes": 1845,
+      "license_files": [
+        {
+          "path": "turndown-plugin-gfm-1.0.2/LICENSE",
+          "source_path": "node_modules/turndown-plugin-gfm/LICENSE",
+          "sha256": "a055e3a15db4b4cbb5af381230eba085603126d7d5d8c4dae45ee85b877a9729"
+        }
+      ]
+    },
+    {
+      "name": "zod",
+      "version": "4.6.5",
+      "declared_license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/colinhacks/zod.git"
+      },
+      "lockfile_integrity": "sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==",
+      "source_directory": "node_modules/zod",
+      "bundled_input_count": 94,
+      "bundled_bytes": 453634,
+      "license_files": [
+        {
+          "path": "zod-4.6.5/LICENSE",
+          "source_path": "node_modules/zod/LICENSE",
+          "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+        }
+      ]
+    }
+  ],
+  "embedded_components": [
+    {
+      "name": "content-type",
+      "version": "1.0.5",
+      "license": "MIT",
+      "embedded_by": "@modelcontextprotocol/client@2.2.0",
+      "evidence": "The SDK source map src-xKF0PJN-.mjs.map identifies .pnpm/content-type@1.0.5/node_modules/content-type/index.js; the browser bundle LEGAL file retains its copyright header.",
+      "url": "https://raw.githubusercontent.com/jshttp/content-type/v1.0.5/LICENSE",
+      "license_file": "embedded-content-type-1.0.5/LICENSE",
+      "sha256": "257aed98914108e91a337912727b6a802eef218248507f74b76faffaff517a38",
+      "retrieved_on": "2026-10-02"
+    },
+    {
+      "name": "Babel regenerator helper",
+      "version": "embedded in dompurify@3.4.16; helper package version not identified",
+      "license": "MIT",
+      "embedded_by": "dompurify@3.4.16",
+      "evidence": "DOMPurify dist/purify.es.mjs and the browser bundle LEGAL file attribute regenerator-runtime to Facebook and link to Babel helpers LICENSE.",
+      "url": "https://raw.githubusercontent.com/babel/babel/main/packages/babel-helpers/LICENSE",
+      "license_file": "embedded-babel-regenerator/LICENSE",
+      "sha256": "4be9d87b56a306293223b490c0d0b245e9e94f39884147bf051a6c7b825aeb30",
+      "retrieved_on": "2026-10-02"
+    },
+    {
+      "name": "@cfworker/json-schema",
+      "version": "4.1.1",
+      "license": "MIT; preserve upstream third-party notices",
+      "embedded_by": "@modelcontextprotocol/client@2.2.0",
+      "evidence": "Emitted client cfWorkerProvider-BylNJ1R5.mjs source map identifies .pnpm/@cfworker+json-schema@4.1.1 sources. npm metadata supplies the gitHead used for LICENSE.md. The upstream current THIRD_PARTY_NOTICES.md separately preserves punycode.js and ajv-derived source notices; it is not claimed to be from the release commit.",
+      "upstream_release_revision": "5409fdc2bd144f68e8b28c61c71fcb16600000a6",
+      "license_files": [
+        {
+          "path": "embedded-cfworker-json-schema-4.1.1/LICENSE.md",
+          "url": "https://raw.githubusercontent.com/cfworker/cfworker/5409fdc2bd144f68e8b28c61c71fcb16600000a6/LICENSE.md",
+          "sha256": "376944252ab78ca6b41aee44ddea8894927ee67891e77e61eb9d59af63e35094"
+        },
+        {
+          "path": "embedded-cfworker-json-schema-4.1.1/THIRD_PARTY_NOTICES.md",
+          "url": "https://raw.githubusercontent.com/cfworker/cfworker/main/THIRD_PARTY_NOTICES.md",
+          "sha256": "4f4a73e1f6978efa0aece85e05471f64ddbefde9378ec14d6a75184af44676fb"
+        }
+      ],
+      "retrieved_on": "2026-10-02"
+    }
+  ],
+  "vendored_assets": [
+    {
+      "name": "@phosphor-icons/core",
+      "version": "2.1.1",
+      "license": "MIT",
+      "source": "https://registry.npmjs.org/@phosphor-icons/core/-/core-2.1.1.tgz",
+      "license_file": "phosphor-icons-MIT.txt",
+      "implementation": "skills/llm-wiki/assets/workspace/web/icons.jsx",
+      "note": "Original regular and duotone SVG paths. 81 exported semantic icon components; no icon runtime package installed."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent wiki"
+  short_description: "Notes, sources and decisions in Codex"
+  default_prompt: "Use $llm-wiki. Open my knowledge library."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent wiki · Check links"
+  short_description: "Find broken links and review open questions"
+  default_prompt: "Use $llm-wiki-lint. Check this library for broken links."
+policy:
+  allow_implicit_invocation: true

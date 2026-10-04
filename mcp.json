@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "wiki": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "${PLUGIN_ROOT}/skills/llm-wiki/scripts/mcp_server.py"
+      ],
+      "cwd": "${PLUGIN_ROOT}",
+      "env": {
+        "LLM_WIKI_CONFIG": "${PLUGIN_DATA}/workspace.json"
+      }
+    }
+  }
+}

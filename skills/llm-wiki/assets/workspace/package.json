@@ -1,0 +1,27 @@
+{
+  "name": "agent-wiki-workspace",
+  "private": true,
+  "version": "0.2.2",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild web/main.jsx --bundle --format=iife --platform=browser --target=es2020 --minify --legal-comments=external --outfile=panels/wiki-app/view.js --loader:.txt=text --loader:.png=dataurl --loader:.css=text",
+    "check": "npm run build && node --check panels/wiki-app/view.js",
+    "clean:package": "ruby -rfileutils -e 'FileUtils.rm_rf(\"node_modules\")'"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^2.0.3",
+    "d3-force": "^3.0.0",
+    "dompurify": "^3.4.16",
+    "graphology": "^0.26.0",
+    "lucide-react": "^0.468.0",
+    "marked": "^15.0.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sigma": "^3.0.2",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.5"
+  }
+}

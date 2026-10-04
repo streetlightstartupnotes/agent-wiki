@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent wiki · Default library"
+  short_description: "Choose the library used across conversations"
+  default_prompt: "Use $llm-wiki-global. Show my default library and its lookup setting."
+policy:
+  allow_implicit_invocation: true
